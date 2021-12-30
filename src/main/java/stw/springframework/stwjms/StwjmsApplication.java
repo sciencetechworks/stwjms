@@ -15,8 +15,10 @@ public class StwjmsApplication {
                         new ConfigurationImpl()
                                 .setPersistenceEnabled(false)
                                 .setJournalDirectory("target/data/journal")
-                                .setSecurityEnabled(false)
-                                .addAcceptorConfiguration("invm","vm://0"));
+                                .setSecurityEnabled(false));
+                                //.addAcceptorConfiguration(
+                                        //"tcp", "tcp://127.0.0.1:5678"));
+                               //         "invm","vm://0"));
                 
                 server.start();
                 
